@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title> جمعية عناية المساجد </title>
+  <meta name="title" content=" جمعية عناية المساجد">
+  <meta name="description" content="">
+  <!-- Light Theme Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/fav.svg" id="browser-light-theme-favicon" />
+  <!-- Dark Theme Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/fav.svg" id="browser-dark-theme-favicon" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- main -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <header>
+    <section class="inner">
+      <!-- brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.svg" loading="lazy" alt="">
+      </a>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+          <a class="logo" href="index.html">
+            <img src="img/fav.svg" loading="lazy" alt="">
+          </a>
+          <a class="navLink" id="home-nav" href="index.html"> الرئيسية </a>
+          <!-- <a class="navLink" id="about-nav" href="about.html"> من نحن </a> -->
+          <a class="navLink" id="history-nav" href="categories.html"> اقسام التبرعات </a>
+          <a class="navLink" id="team-nav" href="bankAccounts.html"> الحسابات البنكية </a>
+          <a class="navLink" id="contactUs-nav" href="contactUs.html"> تواصل معنا</a>
+        </ul>
+      </nav>
+      <!-- Actions -->
+      <div class="moreActions">
+        <a href="cart.html" class="link" data-bs-toggle="tooltip" title=" سلة التبرعات "> <img src="img/icons/cart.svg"
+            alt="">
+          <span class="count">3</span>
+        </a>
+        <a href="#!" class="link" data-bs-toggle="modal" data-bs-target="#donateQuickly">
+          <span data-bs-toggle="tooltip" title=" تبرع سريع ">
+            <img src="img/icons/donate.svg" alt="">
+          </span>
+        </a>
+        <div class="dropdown">
+          <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="img/icons/user.svg" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="myAccount">
+            <a href="login.html" class="dropdown-item"> تسجيل دخول </a>
+            <a href="profile.html" class="dropdown-item"> حسابي </a>
+            <a href="notifications.html" class="dropdown-item"> الاشعارات </a>
+            <a href="editProfile.html" class="dropdown-item"> تعديل الحساب </a>
+            <a href="#!" class="dropdown-item"> تسجيل خروج </a>
+          </div>
+        </div>
+        <a href="#!" class="link" data-bs-toggle="tooltip" title=" اللغة "> EN </a>
+      </div>
+    </section>
+  </header>
+  <!-- Modal -->
+  <div class="modal fade donateQuickly" id="donateQuickly" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modalHeader">
+          <h4 class="modalTitle"> تبرع سريع </h4>
+          <button class="btn" data-bs-dismiss="modal"> X </button>
+        </div>
+        <form class="modalForm" action="cart.html">
+          <div class="formGroup">
+            <label for="type"> نوع التبرع </label>
+            <select id="type" name="" class="form-select" id="">
+              <option value=""> مشاريع عامة </option>
+              <option value=""> الوقف بمكة </option>
+            </select>
+          </div>
+          <div class="formGroup">
+            <label for="ammount"> مبلغ التبرع </label>
+            <input id="ammount" type="number" min="0" class="form-control" placeholder=" 0 ريال ">
+          </div>
+          <button type="submit" class="btn btnSubmit"> تبرع </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="links">
+          <a href="index.html"> الرئيسية </a>
+          <a href="#!" class="active"> التدريب والتأهيل للايتام </a>
+        </div>
+        <h2> التدريب والتأهيل للايتام </h2>
+      </div>
+    </section>
+    <!-- projectDetails -->
+    <section class="projectDetailsPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 p-2">
+            <div class="projectImg" data-aos="fade-up">
+              <div class="shareProject">
+                <a href="#!" class="share"> <img src="img/icons/share.svg" alt=""> </a>
+                <a href="#!" class="twitter" data-bs-toggle="tooltip" title=" تويتر "> <img src="img/icons/twitter.svg"
+                    alt=""> </a>
+                <a href="#!" class="whatsapp" data-bs-toggle="tooltip" title=" واتساب "> <img
+                    src="img/icons/whatsapp.svg" alt=""> </a>
+                <a href="#!" class="instagram" data-bs-toggle="tooltip" title=" انستجرام "> <img
+                    src="img/icons/instagram.svg" alt=""> </a>
+                <a href="#!" class="facebook" data-bs-toggle="tooltip" title=" فيسبوك "> <img
+                    src="img/icons/facebook.svg" alt=""> </a>
+              </div>
+              <a data-fancybox="" href="img/sliderImg3.jpg">
+                <img class="img" src="img/sliderImg3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 p-2">
+            <div class="projectInfo">
+              <h1 class="title" data-aos="fade-up"> التدريب والتأهيل للايتام </h1>
+              <p class="description" data-aos="fade-up"> أسّس صدقتك الجارية بمكة داخل حدود الحرم: اجعل تأثيرك يستمر
+                ويتجدد بصدقاتك
+                الجارية. شارك في بناء
+                مشتركة الايتام والتدريب والتأهيل للايتام Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                doloremque facere quae! Reiciendis nesciunt nostrum perferendis suscipit reprehenderit exercitationem
+                illum. Facere nesciunt adipisci corrupti sequi, voluptates quibusdam deleniti quas laboriosam? Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Deserunt consequuntur porro saepe asperiores itaque
+                repellat odit eaque nobis a neque dolore sit assumenda et voluptates unde totam quasi, veritatis aut?
+              </p>
+              <div class="gifts" data-aos="fade-up">
+                <button class="gift"> سهم <span> 200 </span> ريال </button>
+                <button class="gift"> سهم <span> 200 </span> ريال </button>
+                <button class="gift"> سهم <span> 200 </span> ريال </button>
+                <button class="gift"> 2 سهم <span> 400 </span> ريال </button>
+                <button class="donate"> بما تجود به نفسك (التبرع بأي مبلغ) </button>
+              </div>
+              <div class="actions" data-aos="fade-up">
+                <div class="inputDiv">
+                  <input type="number" min="0" placeholder="ادخل المبلغ">
+                  <span> ريال </span>
+                </div>
+                <div class="quantity">
+                  <button class="min"> - </button>
+                  <input type="text" class="qty" value="1" min="1" />
+                  <button class="plus"> + </button>
+                </div>
+                <a href="#!" class="action" data-bs-toggle="tooltip" title=" اضافة للسلة ">
+                  <!-- ICON -->
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40" height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve">
+                    <g>
+                      <circle cx="7" cy="22" r="2" fill="#158192" opacity="1" data-original="#000000"></circle>
+                      <circle cx="17" cy="22" r="2" fill="#158192" opacity="1" data-original="#000000"></circle>
+                      <path d="M23 3h-2V1a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0V5h2a1 1 0 0 0 0-2Z"
+                        fill="#158192" opacity="1" data-original="#000000"></path>
+                      <path
+                        d="M21.771 9.726a.994.994 0 0 0-1.162.806A3 3 0 0 1 17.657 13H5.418l-.94-8H13a1 1 0 0 0 0-2H4.242L4.2 2.648A3 3 0 0 0 1.222 0H1a1 1 0 0 0 0 2h.222a1 1 0 0 1 .993.883l1.376 11.7A5 5 0 0 0 8.557 19H19a1 1 0 0 0 0-2H8.557a3 3 0 0 1-2.829-2h11.929a5 5 0 0 0 4.921-4.112 1 1 0 0 0-.807-1.162Z"
+                        fill="#158192" opacity="1" data-original="#000000"></path>
+                    </g>
+                  </svg>
+                  <span> اضافة للسلة </span>
+                </a>
+                <a href="cart.html" class="action" data-bs-toggle="tooltip" title=" تبرع ">
+                  <!-- ICON -->
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40" height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve">
+                    <g>
+                      <path
+                        d="M24 6v10.101a7.948 7.948 0 0 1-2.343 5.657l-1.95 1.95a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l1.95-1.95A5.961 5.961 0 0 0 22 16.101V6c0-.551-.449-1-1-1s-1 .449-1 1l-.013 8.067a2.982 2.982 0 0 1-.688 1.856l-2.578 2.684a.998.998 0 0 1-1.414.028 1 1 0 0 1-.028-1.414l2.533-2.634a.895.895 0 0 0 .188-.585v-.046a.996.996 0 0 0-1.66-.701l-3.163 2.911a7.009 7.009 0 0 1 .824 3.276v3.559a1 1 0 0 1-2 0v-3.559a5.012 5.012 0 0 0-1.615-3.68l-2.734-2.516a.995.995 0 0 0-1.397.086 1.002 1.002 0 0 0-.021 1.305l2.57 2.671a1 1 0 1 1-1.442 1.386l-2.616-2.721a3.085 3.085 0 0 1-.723-1.854c-.005-.04-.024-8.118-.024-8.118 0-.551-.449-1-1-1s-1 .449-1 1v10.101c0 1.603.624 3.109 1.757 4.243l1.95 1.95a.999.999 0 1 1-1.414 1.414l-1.95-1.95a7.948 7.948 0 0 1-2.343-5.657V6c0-1.654 1.346-3 3-3s3 1.346 3 3v5.186a2.99 2.99 0 0 1 2.996.579l2.744 2.525c.087.08.164.168.247.252l3.008-2.768a2.995 2.995 0 0 1 3.005-.587V6.001c0-1.654 1.346-3 3-3s3 1.346 3 3ZM7 3.2C7 1.435 8.346 0 10 0c.782 0 1.477.27 2 .727A3.009 3.009 0 0 1 14 0c1.654 0 3 1.436 3 3.2 0 2.004-2.042 4.064-3.754 5.438-.361.29-.803.435-1.246.435s-.885-.145-1.247-.436C9.041 7.263 7 5.203 7 3.199Zm2 0c0 .904 1.152 2.391 3.006 3.879C13.848 5.591 15 4.104 15 3.2c0-.662-.449-1.2-1-1.2-.461 0-1 .262-1 1a1 1 0 0 1-2 0c0-.738-.539-1-1-1-.551 0-1 .539-1 1.2Z"
+                        fill="#158192" opacity="1" data-original="#000000"></path>
+                    </g>
+                  </svg>
+                  <span> تبرع </span>
+                </a>
+                <a href="gift.html" class="action" data-bs-toggle="tooltip" title=" إهداء لمن تحب ">
+                  <!-- ICON -->
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40" height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve">
+                    <g>
+                      <path
+                        d="M20 7h-1.738A5.137 5.137 0 0 0 20 3a1 1 0 0 0-2 0c0 2.622-2.371 3.53-4.174 3.841A9.332 9.332 0 0 0 15 3a3 3 0 0 0-6 0 9.332 9.332 0 0 0 1.174 3.841C8.371 6.53 6 5.622 6 3a1 1 0 0 0-2 0 5.137 5.137 0 0 0 1.738 4H4a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2v5a5.006 5.006 0 0 0 5 5h10a5.006 5.006 0 0 0 5-5v-5a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4Zm-8-5a1 1 0 0 1 1 1 7.71 7.71 0 0 1-1 3.013A7.71 7.71 0 0 1 11 3a1 1 0 0 1 1-1ZM2 11a2 2 0 0 1 2-2h7v3H2Zm2 8v-5h7v8H7a3 3 0 0 1-3-3Zm16 0a3 3 0 0 1-3 3h-4v-8h7Zm-7-7V9h7a2 2 0 0 1 2 2v1Z"
+                        fill="#158192" opacity="1" data-original="#000000"></path>
+                    </g>
+                  </svg>
+                  <span> إهداء لمن تحب </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq -->
+    <section class="faqSection">
+      <div class="container">
+        <h2 class="sectionTitle" data-aos="fade-up"> الاسئلة الشائعة </h2>
+        <p class="description" data-aos="fade-up"> حث ديننا الحنيف على بناء المساجد، وجعل ذلك سبيلاً إلى الجنة والفوزِ
+          برضا الله جل وعلا،
+          ففي الصحيحين عن النبي
+          ﷺ قال "مَنْ بَنَى لِلَّهِ مَسْجِدًا وَلَوْ مِثْلَ مَفْحَصِ قَطَاةٍ بَنَى اللَّهُ لَهُ بَيْتًا فِي الْجَنَّةِ"
+          ومفحص القطاة لا يمكن بحال أن يتسع لمصلي، فدل ذلك على أن أيّ تبرع يُسهم في بناء مسجد، موعودٌ صاحبه ببيت في
+          الجنة، ولو كان المبلغ الذي دفعة للمسجد قليلا، ويدخل في ذلك من ساهم في بنائه، أو عمل فيه بيده، أو دفع أجرة
+          العاملين، وغير ذلك.
+          وبناء المساجد من الصدقات الجارية، التي يجري أجرها للعبد بعد ما ينقطع عمله بالموت..
+          اغتنم الفرصة واكسب أجور كل من صلى وتلا القرآن في المسجد
+          تبرع بـ ٨٧ ريال أو بعدة أسهم لبناء المسجد </p>
+        <div class="accordion accordion-flush" id="faqAccordion">
+          <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                هل الجمعية موثوقة؟
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                نعم موثوقة ومسجلة في المركز الوطني لتنمية القطاع الغير ربحي
+                يعني بضغطة واحدة منك الحين تكون مطمن إن صدقتك الجارية بأمان وإحسانك في ميزان حسناتك بعون الله.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ودك تعرف ليش دعمك مهم؟
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                لأن كل واحد فينا يتمنى يكون له عمل صالح وصدقة جارية يستمر أجرها له بعد موته، وخاصة لمن تكون هذه الصدقة
+                في أحب الأماكن عند الله وهي بيوت الله، وهذا أكبر شرف لك في الحياة، ويظل أجرك بالاستمرار والزيادة ليوم
+                القيامة مع كل آية تقرأ أو صلاة تقام.
+                ما تدري يمكن يوم القيامة ببركة صدقتك ومساهمتك في تأسيس المسجد تعلو منزلتك في الجنة للدرجات العالية بإذن
+                الله.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                من المستفيد؟
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                مئات المصلين من أهل الحي وعابري السبيل
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <div class="logo">
+          <img src="img/logo.svg" loading="lazy" alt="">
+        </div>
+        <div class=" p-1 d-flex flex-wrap justify-content-center gap-3 my-3">
+          <a href="index.html"> الرئيسية </a>
+          <!-- <a href="about.html"> من نحن </a> -->
+          <a href="categories.html"> اقسام التبرعات </a>
+          <a href="bankAccounts.html"> الحسابات البنكية </a>
+          <a href="contactUs.html"> تواصل معنا</a>
+        </div>
+      </div>
+      <div class="d-flex gap-4 flex-wrap justify-content-between pt-4 px-3 border-top align-items-center">
+        <a href="https://maps.app.goo.gl/FU3gh5HK1XywJwe97" class="link" target="_blank">
+          <div class="icon">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+              data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M18,6c0-3.309-2.691-6-6-6S6,2.691,6,6c0,2.968,2.166,5.439,5,5.916v11.084c0,.552,.448,1,1,1s1-.448,1-1V11.916c2.834-.477,5-2.948,5-5.916Zm-6,4c-2.206,0-4-1.794-4-4s1.794-4,4-4,4,1.794,4,4-1.794,4-4,4Z">
+              </path>
+            </svg>
+          </div>
+          <p>
+            الرياض ، المملكة العربية السعودية
+          </p>
+        </a>
+        <a href="mailto:info@Mosque-Care-Association.com" class="link" target="_blank">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+              height="20" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M19 1H5a5.006 5.006 0 0 0-5 5v12a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5V6a5.006 5.006 0 0 0-5-5ZM5 3h14a3 3 0 0 1 2.78 1.887l-7.658 7.659a3.007 3.007 0 0 1-4.244 0L2.22 4.887A3 3 0 0 1 5 3Zm14 18H5a3 3 0 0 1-3-3V7.5l6.464 6.46a5.007 5.007 0 0 0 7.072 0L22 7.5V18a3 3 0 0 1-3 3Z"
+                  fill="#000000" opacity="1" data-original="#000000"></path>
+              </g>
+            </svg>
+          </div>
+          <p>
+            info@Mosque-Care-Association.com
+          </p>
+        </a>
+        <a href="tel:+0123456789" class="link" target="_blank">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+              height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M13 1a1 1 0 0 1 1-1 10.011 10.011 0 0 1 10 10 1 1 0 0 1-2 0 8.009 8.009 0 0 0-8-8 1 1 0 0 1-1-1Zm1 5a4 4 0 0 1 4 4 1 1 0 0 0 2 0 6.006 6.006 0 0 0-6-6 1 1 0 0 0 0 2Zm9.093 10.739a3.1 3.1 0 0 1 0 4.378l-.91 1.049c-8.19 7.841-28.12-12.084-20.4-20.3l1.15-1a3.081 3.081 0 0 1 4.327.04c.031.031 1.884 2.438 1.884 2.438a3.1 3.1 0 0 1-.007 4.282L7.979 9.082a12.781 12.781 0 0 0 6.931 6.945l1.465-1.165a3.1 3.1 0 0 1 4.281-.006s2.406 1.852 2.437 1.883Zm-1.376 1.454s-2.393-1.841-2.424-1.872a1.1 1.1 0 0 0-1.549 0c-.027.028-2.044 1.635-2.044 1.635a1 1 0 0 1-.979.152A15.009 15.009 0 0 1 5.9 9.3a1 1 0 0 1 .145-1s1.607-2.018 1.634-2.044a1.1 1.1 0 0 0 0-1.549c-.031-.03-1.872-2.425-1.872-2.425a1.1 1.1 0 0 0-1.51.039l-1.15 1C-2.495 10.105 14.776 26.418 20.721 20.8l.911-1.05a1.121 1.121 0 0 0 .085-1.557Z"
+                  fill="#000000" opacity="1" data-original="#000000"></path>
+              </g>
+            </svg>
+          </div>
+          <p>
+            +0123456789
+          </p>
+        </a>
+        <p>
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          © جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </div>
+    <!-- whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=9660123456789" target="_blank" class="floatWhatsapp">
+      <img src="img/icons/whatsapp.svg" alt="">
+    </a>
+  </footer>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!-- main -->
+  <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

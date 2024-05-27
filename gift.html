@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title> جمعية عناية المساجد </title>
+  <meta name="title" content=" جمعية عناية المساجد">
+  <meta name="description" content="">
+  <!-- Light Theme Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/fav.svg" id="browser-light-theme-favicon" />
+  <!-- Dark Theme Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/fav.svg" id="browser-dark-theme-favicon" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!-- main -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================ Header ================= -->
+  <header>
+    <section class="inner">
+      <!-- brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.svg" loading="lazy" alt="">
+      </a>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+          <a class="logo" href="index.html">
+            <img src="img/fav.svg" loading="lazy" alt="">
+          </a>
+          <a class="navLink" id="home-nav" href="index.html"> الرئيسية </a>
+          <!-- <a class="navLink" id="about-nav" href="about.html"> من نحن </a> -->
+          <a class="navLink" id="history-nav" href="categories.html"> اقسام التبرعات </a>
+          <a class="navLink" id="team-nav" href="bankAccounts.html"> الحسابات البنكية </a>
+          <a class="navLink" id="contactUs-nav" href="contactUs.html"> تواصل معنا</a>
+        </ul>
+      </nav>
+      <!-- Actions -->
+      <div class="moreActions">
+        <a href="cart.html" class="link" data-bs-toggle="tooltip" title=" سلة التبرعات "> <img src="img/icons/cart.svg"
+            alt="">
+          <span class="count">3</span>
+        </a>
+        <a href="#!" class="link" data-bs-toggle="modal" data-bs-target="#donateQuickly">
+          <span data-bs-toggle="tooltip" title=" تبرع سريع ">
+            <img src="img/icons/donate.svg" alt="">
+          </span>
+        </a>
+        <div class="dropdown">
+          <button class=" dropdown-toggle link" type="button" id="myAccount" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="img/icons/user.svg" alt="">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="myAccount">
+            <a href="login.html" class="dropdown-item"> تسجيل دخول </a>
+            <a href="profile.html" class="dropdown-item"> حسابي </a>
+            <a href="notifications.html" class="dropdown-item"> الاشعارات </a>
+            <a href="editProfile.html" class="dropdown-item"> تعديل الحساب </a>
+            <a href="#!" class="dropdown-item"> تسجيل خروج </a>
+          </div>
+        </div>
+        <a href="#!" class="link" data-bs-toggle="tooltip" title=" اللغة "> EN </a>
+      </div>
+    </section>
+  </header>
+  <!-- Modal -->
+  <div class="modal fade donateQuickly" id="donateQuickly" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modalHeader">
+          <h4 class="modalTitle"> تبرع سريع </h4>
+          <button class="btn" data-bs-dismiss="modal"> X </button>
+        </div>
+        <form class="modalForm" action="cart.html">
+          <div class="formGroup">
+            <label for="type"> نوع التبرع </label>
+            <select id="type" name="" class="form-select" id="">
+              <option value=""> مشاريع عامة </option>
+              <option value=""> الوقف بمكة </option>
+            </select>
+          </div>
+          <div class="formGroup">
+            <label for="ammount"> مبلغ التبرع </label>
+            <input id="ammount" type="number" min="0" class="form-control" placeholder=" 0 ريال ">
+          </div>
+          <button type="submit" class="btn btnSubmit"> تبرع </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((((( content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <content>
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="links">
+          <a href="index.html"> الرئيسية </a>
+          <a href="#!" class="active"> إهداء لمن تحب </a>
+        </div>
+        <h2> إهداء لمن تحب </h2>
+      </div>
+    </section>
+    <!-- gift for lover -->
+    <section class="giftForLover">
+      <div class="container">
+        <h2 class="sectionTitle"> إهداء لمن تحب </h2>
+        <div class="giftView">
+          <img class="giftImg" src="img/giftForLover.jpg" alt="">
+          <h4 class="sender"> محمود جمال عبد العزيز الكومي </h4>
+          <h4 class="receiver"> عماد مجدي سلام المغربي </h4>
+        </div>
+        <button class="gift"> اهداء بــ<span> 100 </span> ريال </button>
+        <div class="total">
+          <p class="name"> أهدي من تحب حسنات جارية في مشروع أسس مسجداً </p>
+          <h3 class="price"> <span> 100 </span> ريال </h3>
+        </div>
+        <div class="actions">
+          <div class="quantity">
+            <button class="min"> - </button>
+            <input type="text" class="qty" value="1" min="1" />
+            <button class="plus"> + </button>
+          </div>
+          <a href="#!" class="action" data-bs-toggle="modal" data-bs-target="#dedicationModal">
+            <!-- ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="40"
+              height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <circle cx="7" cy="22" r="2" fill="#158192" opacity="1" data-original="#000000"></circle>
+                <circle cx="17" cy="22" r="2" fill="#158192" opacity="1" data-original="#000000"></circle>
+                <path d="M23 3h-2V1a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0V5h2a1 1 0 0 0 0-2Z"
+                  fill="#158192" opacity="1" data-original="#000000"></path>
+                <path
+                  d="M21.771 9.726a.994.994 0 0 0-1.162.806A3 3 0 0 1 17.657 13H5.418l-.94-8H13a1 1 0 0 0 0-2H4.242L4.2 2.648A3 3 0 0 0 1.222 0H1a1 1 0 0 0 0 2h.222a1 1 0 0 1 .993.883l1.376 11.7A5 5 0 0 0 8.557 19H19a1 1 0 0 0 0-2H8.557a3 3 0 0 1-2.829-2h11.929a5 5 0 0 0 4.921-4.112 1 1 0 0 0-.807-1.162Z"
+                  fill="#158192" opacity="1" data-original="#000000"></path>
+              </g>
+            </svg>
+            <span> اضافة للسلة </span>
+          </a>
+          <a href="#!" class="action" data-bs-toggle="modal" data-bs-target="#dedicationModal">
+            <!-- ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="40"
+              height="40" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M20 7h-1.738A5.137 5.137 0 0 0 20 3a1 1 0 0 0-2 0c0 2.622-2.371 3.53-4.174 3.841A9.332 9.332 0 0 0 15 3a3 3 0 0 0-6 0 9.332 9.332 0 0 0 1.174 3.841C8.371 6.53 6 5.622 6 3a1 1 0 0 0-2 0 5.137 5.137 0 0 0 1.738 4H4a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2v5a5.006 5.006 0 0 0 5 5h10a5.006 5.006 0 0 0 5-5v-5a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4Zm-8-5a1 1 0 0 1 1 1 7.71 7.71 0 0 1-1 3.013A7.71 7.71 0 0 1 11 3a1 1 0 0 1 1-1ZM2 11a2 2 0 0 1 2-2h7v3H2Zm2 8v-5h7v8H7a3 3 0 0 1-3-3Zm16 0a3 3 0 0 1-3 3h-4v-8h7Zm-7-7V9h7a2 2 0 0 1 2 2v1Z"
+                  fill="#158192" opacity="1" data-original="#000000"></path>
+              </g>
+            </svg>
+            <span> إهداء الأن </span>
+          </a>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade dedicationModal" id="dedicationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modalHeader">
+              <h4 class="modalTitle"> إهداء تبرع </h4>
+              <button class="btn" data-bs-dismiss="modal"> X </button>
+            </div>
+            <form class="modalForm">
+              <div class="formGroup">
+                <label for="receiverName"> اسم المهدى إليه </label>
+                <input id="receiverName" type="text" class="form-control" placeholder=" الشخص الذي ستصلة الهدية ">
+              </div>
+              <div class="formGroup">
+                <label for="phone">رقم جوال المهدى إليه </label>
+                <input id="phone" type="text" class="form-control" placeholder=" 966 555 555 555 ">
+              </div>
+              <div class="formGroup">
+                <label for="senderName"> اسم المرسل </label>
+                <input id="senderName" type="text" class="form-control" placeholder=" اسمك انت ">
+              </div>
+              <div class="formGroup">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="sendToMe" value="option1" />
+                  <label class="form-check-label" for="sendToMe"> ارسال نسخة الي جوالي </label>
+                </div>
+              </div>
+              <div class="formGroup">
+                <div class="btn-group" role="group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btncheck1" autocomplete="off" checked />
+                  <label class="btn btn-outline-primary" for="btncheck1"> ارسال الان </label>
+                  <input type="radio" class="btn-check" name="btnradio" id="btncheck2" autocomplete="off" />
+                  <label class="btn btn-outline-primary" for="btncheck2"> ارسال في وقت محدد </label>
+                </div>
+              </div>
+              <div class="formGroup dateGroup">
+                <label for="date"> وقت الارسال </label>
+                <input id="date" type="datetime-local" class="form-control">
+              </div>
+              <button type="submit" class="btn btnSubmit"> ارسال الهدية </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </content>
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!--((((((((((((((((( / content )))))))))))))))))))-->
+  <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
+  <!-- ================ Footer ================= -->
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <div class="logo">
+          <img src="img/logo.svg" loading="lazy" alt="">
+        </div>
+        <div class=" p-1 d-flex flex-wrap justify-content-center gap-3 my-3">
+          <a href="index.html"> الرئيسية </a>
+          <!-- <a href="about.html"> من نحن </a> -->
+          <a href="categories.html"> اقسام التبرعات </a>
+          <a href="bankAccounts.html"> الحسابات البنكية </a>
+          <a href="contactUs.html"> تواصل معنا</a>
+        </div>
+      </div>
+      <div class="d-flex gap-4 flex-wrap justify-content-between pt-4 px-3 border-top align-items-center">
+        <a href="https://maps.app.goo.gl/FU3gh5HK1XywJwe97" class="link" target="_blank">
+          <div class="icon">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+              data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M18,6c0-3.309-2.691-6-6-6S6,2.691,6,6c0,2.968,2.166,5.439,5,5.916v11.084c0,.552,.448,1,1,1s1-.448,1-1V11.916c2.834-.477,5-2.948,5-5.916Zm-6,4c-2.206,0-4-1.794-4-4s1.794-4,4-4,4,1.794,4,4-1.794,4-4,4Z">
+              </path>
+            </svg>
+          </div>
+          <p>
+            الرياض ، المملكة العربية السعودية
+          </p>
+        </a>
+        <a href="mailto:info@Mosque-Care-Association.com" class="link" target="_blank">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+              height="20" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M19 1H5a5.006 5.006 0 0 0-5 5v12a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5V6a5.006 5.006 0 0 0-5-5ZM5 3h14a3 3 0 0 1 2.78 1.887l-7.658 7.659a3.007 3.007 0 0 1-4.244 0L2.22 4.887A3 3 0 0 1 5 3Zm14 18H5a3 3 0 0 1-3-3V7.5l6.464 6.46a5.007 5.007 0 0 0 7.072 0L22 7.5V18a3 3 0 0 1-3 3Z"
+                  fill="#000000" opacity="1" data-original="#000000"></path>
+              </g>
+            </svg>
+          </div>
+          <p>
+            info@Mosque-Care-Association.com
+          </p>
+        </a>
+        <a href="tel:+0123456789" class="link" target="_blank">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+              height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <path
+                  d="M13 1a1 1 0 0 1 1-1 10.011 10.011 0 0 1 10 10 1 1 0 0 1-2 0 8.009 8.009 0 0 0-8-8 1 1 0 0 1-1-1Zm1 5a4 4 0 0 1 4 4 1 1 0 0 0 2 0 6.006 6.006 0 0 0-6-6 1 1 0 0 0 0 2Zm9.093 10.739a3.1 3.1 0 0 1 0 4.378l-.91 1.049c-8.19 7.841-28.12-12.084-20.4-20.3l1.15-1a3.081 3.081 0 0 1 4.327.04c.031.031 1.884 2.438 1.884 2.438a3.1 3.1 0 0 1-.007 4.282L7.979 9.082a12.781 12.781 0 0 0 6.931 6.945l1.465-1.165a3.1 3.1 0 0 1 4.281-.006s2.406 1.852 2.437 1.883Zm-1.376 1.454s-2.393-1.841-2.424-1.872a1.1 1.1 0 0 0-1.549 0c-.027.028-2.044 1.635-2.044 1.635a1 1 0 0 1-.979.152A15.009 15.009 0 0 1 5.9 9.3a1 1 0 0 1 .145-1s1.607-2.018 1.634-2.044a1.1 1.1 0 0 0 0-1.549c-.031-.03-1.872-2.425-1.872-2.425a1.1 1.1 0 0 0-1.51.039l-1.15 1C-2.495 10.105 14.776 26.418 20.721 20.8l.911-1.05a1.121 1.121 0 0 0 .085-1.557Z"
+                  fill="#000000" opacity="1" data-original="#000000"></path>
+              </g>
+            </svg>
+          </div>
+          <p>
+            +0123456789
+          </p>
+        </a>
+        <p>
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          © جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </div>
+    <!-- whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=9660123456789" target="_blank" class="floatWhatsapp">
+      <img src="img/icons/whatsapp.svg" alt="">
+    </a>
+  </footer>
+  <!-- ================ /Footer ================= -->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!-- main -->
+  <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.dateGroup').hide();
+      $('input[name="btnradio"]').change(function () {
+        if ($(this).attr('id') === 'btncheck2') {
+          $('.dateGroup').show();
+        } else {
+          $('.dateGroup').hide();
+        }
+      });
+    });
+
+    $(document).ready(function () {
+      $('#senderName').on('input', function () {
+        var sender = $(this).val();
+        $('.giftView .sender').text(sender);
+      });
+      $('#receiverName').on('input', function () {
+        var receiver = $(this).val();
+        $('.giftView .receiver').text(receiver);
+      });
+    });
+  </script>
+</body>
+
+</html>
