@@ -214,8 +214,8 @@ content {
   align-items: center;
 }
 .preloader .preloaderImg {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   -webkit-mask-image: url("../img/logo.svg");
           mask-image: url("../img/logo.svg");
   -webkit-mask-size: contain;
@@ -231,8 +231,8 @@ content {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   z-index: 2;
   background-color: var(--mainColor);
   transform: translateY(100%);
@@ -241,8 +241,8 @@ content {
 .preloader .preloaderImg::before {
   content: "";
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-image: url("../img/logo.svg");
   background-size: contain;
   background-position: center;

@@ -195,8 +195,8 @@ content {
   justify-content: center;
   align-items: center;
   .preloaderImg {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     mask-image: url("../img/logo.svg");
     mask-size: contain;
     mask-position: center;
@@ -207,8 +207,8 @@ content {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       z-index: 2;
       background-color: var(--mainColor);
       transform: translateY(100%);
@@ -217,8 +217,8 @@ content {
     &::before {
       content: "";
       display: block;
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       background-image: url("../img/logo.svg");
       background-size: contain;
       background-position: center;
